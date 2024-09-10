@@ -1,11 +1,12 @@
+import { NgIf } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { initFlowbite } from 'flowbite';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, NgIf],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -13,7 +14,10 @@ import { initFlowbite } from 'flowbite';
 export class AppComponent implements OnInit {
   title = 'mobile';
 
+  width = window.innerWidth
+
   ngOnInit(): void {
     initFlowbite();
+    console.log(this.width);
   }
 }

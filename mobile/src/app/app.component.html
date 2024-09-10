@@ -1,1 +1,2 @@
-<router-outlet />
+<div *ngIf="width <= 576"> <router-outlet />  </div>
+<div *ngIf="width > 576" class="text-[3rem] text-center animate-pulse mt-[10rem]"> <p> use mobile</p></div>
