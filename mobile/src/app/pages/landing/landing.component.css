@@ -1,0 +1,12 @@
+:host{
+display: block;
+background-image: url('../../../assets/images/main.png');
+height: 102vh;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+button{
+    width: 20rem;
+}
