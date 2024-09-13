@@ -20,4 +20,4 @@ export class AppComponent implements OnInit {
     initFlowbite();
     console.log(this.width);
   }
-}
+} 
